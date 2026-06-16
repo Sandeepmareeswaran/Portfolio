@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { ArrowRight, DownloadCloud, ExternalLink } from 'lucide-react';
 
-import cashmanImg from '../../assets/clo.png';
-import aramEyeCareImg from '../../assets/aramEyecare.png';
-import vanikanImg from '../../assets/van.png';
-import konguTbiImg from '../../assets/tbi logo.png';
-import zenoraImg from '../../assets/slogo.png';
+import cashmanImg from '../assets/clo.png';
+import aramEyeCareImg from '../assets/aramEyecare.png';
+import vanikanImg from '../assets/van.png';
+import konguTbiImg from '../assets/tbi logo.png';
+import zenoraImg from '../assets/slogo.png';
 
 const projects = [
   {
@@ -111,6 +111,7 @@ export default function Projects() {
                 src={projects[activeProject].image}
                 alt={projects[activeProject].name}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
@@ -182,7 +183,7 @@ export default function Projects() {
             >
               <div className="flex items-center gap-3">
                 <div className={`w-10 h-10 rounded-lg overflow-hidden ${activeProject === idx ? 'ring-2 ring-purple-400' : ''}`}>
-                  <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
+                  <img src={project.image} alt={project.name} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div>
                   <p className={`text-sm font-medium ${activeProject === idx ? 'text-purple-300' : 'text-gray-400'}`}>

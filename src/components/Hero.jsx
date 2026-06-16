@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../assets/sandeep_profile.jpg';
+import profileImage from '../assets/sandeep_profile.jpg';
 
 export default function Hero() {
   // Social Links Data - matching reference design
@@ -121,6 +121,8 @@ export default function Hero() {
                           src={profileImage}
                           alt="Sandeep Mareeswaran"
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          loading="eager"
+                          fetchpriority="high"
                         />
                         {/* Subtle gradient overlay */}
                         <div
@@ -270,6 +272,8 @@ export default function Hero() {
                         src={profileImage}
                         alt="Sandeep Mareeswaran"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        loading="eager"
+                        fetchpriority="high"
                       />
                       {/* Subtle gradient overlay */}
                       <div

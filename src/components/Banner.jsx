@@ -1,5 +1,5 @@
 import React from 'react';
-import steveJobs from '../../assets/steve.avif';
+import steveJobs from '../assets/steve.avif';
 
 export default function Banner() {
   return (
@@ -32,6 +32,7 @@ export default function Banner() {
               src={steveJobs}
               alt="Steve Jobs"
               className="w-full h-full object-cover rounded-xl relative z-10 grayscale group-hover:grayscale-0 transition-all duration-500"
+              loading="lazy"
             />
             {/* Animated Border for Image */}
             <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-[#a779f1]/50 transition-colors duration-300"></div>

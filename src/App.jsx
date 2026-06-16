@@ -1,7 +1,7 @@
-import Sandeepm from './pages/sandeepm'
+import Home from './pages/Home'
 
 function App() {
-  return <Sandeepm />
+  return <Home />
 }
 
 export default App

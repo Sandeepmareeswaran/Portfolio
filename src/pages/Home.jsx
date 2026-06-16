@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from '../components/sandeep/Navbar';
-import Hero from '../components/sandeep/Hero';
-import Banner from '../components/sandeep/Banner';
-import About from '../components/sandeep/About';
-import TeckStack from '../components/sandeep/TeckStack';
-import Skills from '../components/sandeep/Skills';
-import Projects from '../components/sandeep/Projects';
-import Achievements from '../components/sandeep/Achievements';
-import Contact from '../components/sandeep/Contact';
-import Footer from '../components/sandeep/Footer';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Banner from '../components/Banner';
+import About from '../components/About';
+import TechStack from '../components/TechStack';
+import Skills from '../components/Skills';
+import Projects from '../components/Projects';
+import Achievements from '../components/Achievements';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
-const Sandeepm = () => {
+const Home = () => {
           return (
                     <div
                               className="min-h-screen overflow-x-hidden"
@@ -27,7 +27,7 @@ const Sandeepm = () => {
                                         <Hero />
                                         <Banner />
                                         <About />
-                                        <TeckStack />
+                                        <TechStack />
                                         <Skills />
                                         <Projects />
                                         <Achievements />
@@ -40,4 +40,4 @@ const Sandeepm = () => {
           );
 };
 
-export default Sandeepm;
+export default Home;

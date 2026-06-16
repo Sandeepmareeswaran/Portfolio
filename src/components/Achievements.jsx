@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Trophy, Award, Medal } from 'lucide-react';
 
-import sihImg from '../../assets/SIH2K25.png';
-import ibmImg from '../../assets/IBM.png';
-import bytesImg from '../../assets/BYTES.png';
-import kecImg from '../../assets/KECHACK.png';
-import hacksphereImg from '../../assets/HACKSPHERE.png';
-import nicImg from '../../assets/NIC.png';
-import sapImg from '../../assets/SAP.png';
+import sihImg from '../assets/SIH2K25.png';
+import ibmImg from '../assets/IBM.png';
+import bytesImg from '../assets/BYTES.png';
+import kecImg from '../assets/KECHACK.png';
+import hacksphereImg from '../assets/HACKSPHERE.png';
+import nicImg from '../assets/NIC.png';
+import sapImg from '../assets/SAP.png';
 
 const achievements = [
   { title: 'Nilgiris Impact Challenge', prize: 'Winner', icon: Trophy, image: nicImg, color: '#A78BFA', description: 'Geo-spatial mapping for building approval system' },
@@ -84,6 +84,7 @@ export default function Achievements() {
                 src={image}
                 alt={title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
               />
 
               {/* Gradient Overlay */}
